@@ -21,7 +21,7 @@
             <label>Number of Students:</label>
             <input type="text" name="numberOfStudents">
             <button type="submit">Generate</button>
-        </form>
+        </form> 
         <table border="1">
             <thead>
                 <tr>
