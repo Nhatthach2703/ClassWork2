@@ -1,6 +1,6 @@
 <%-- 
-    Document   : student
-    Created on : Jan 18, 2024, 9:39:15 AM
+    Document   : student2
+    Created on : Jan 18, 2024, 10:45:35 AM
     Author     : Xuan Vinh
 --%>
 
@@ -17,11 +17,11 @@
     <body>
         <h2>Student List</h2>
 
-        <form action="StudentServlet" method="get">
+        <form action="StudentServlet2" method="get">
             <label>Number of Students:</label>
             <input type="text" name="numberOfStudents">
             <button type="submit">Generate</button>
-        </form> 
+        </form>
         <table border="1">
             <thead>
                 <tr>
@@ -29,6 +29,7 @@
                     <th>Name</th>
                     <th>Gender</th>
                     <th>DOB</th>
+                    <th>Update</th>
                 </tr>
             </thead>
             <tbody>
@@ -49,6 +50,9 @@
                         <input type="checkbox"/>
                         <% }%>
                     <td><%= dateFormat.format(student.getDob())%></td>
+                    <td>
+                        <a href="#">Update</a>
+                    </td>
                 </tr>
                 <%
                         }
@@ -56,6 +60,5 @@
                 %>
             </tbody>
         </table>
-            <h1>basdvf </h1>
     </body>
 </html>
